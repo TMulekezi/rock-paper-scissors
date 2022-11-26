@@ -9,3 +9,32 @@ function getComputerChoice() {
         return "scissors";
     }
 }
+
+function playRound(playerChoice, computerChoice) {
+    playerChoice = playerChoice.trim().toLowerCase();
+    if (playerChoice === computerChoice) {
+        console.log(`Draw! Both players picked ${playerChoice}`);
+    } else if (playerChoice === "rock") {
+        if (computerChoice === "paper") {
+            console.log(`You Loose! ${computerChoice} beats ${playerChoice}`);
+        } else {
+            console.log(`You Win! ${playerChoice} beats ${computerChoice}`);
+        }
+    } else if (playerChoice === "paper") {
+        if (computerChoice === "scissors") {
+            console.log(`You Loose! ${computerChoice} beats ${playerChoice}`);
+        } else {
+            console.log(`You Win! ${playerChoice} beats ${computerChoice}`);
+        }
+    } else if (playerChoice === "scissors"){
+        if (computerChoice === "rock") {
+            console.log(`You Loose! ${computerChoice} beats ${playerChoice}`);
+        } else {
+            console.log(`You Win! ${playerChoice} beats ${computerChoice}`);
+        }
+    } else {
+        console.log("Invalid player selection");
+    }
+}
+
+console.log(playRound("Scissors", getComputerChoice()));
