@@ -37,4 +37,11 @@ function playRound(playerChoice, computerChoice) {
     }
 }
 
-console.log(playRound("Scissors", getComputerChoice()));
+function game() {
+    for (let i = 0; i < 5; i ++) {
+        let userInput = prompt("Rock Paper Scissors?")
+        playRound(userInput, getComputerChoice());
+    }
+}
+
+game();
