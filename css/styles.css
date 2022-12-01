@@ -3,6 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    background-image: linear-gradient(45deg,purple,pink);
 }
 
 .stage {
@@ -18,7 +20,6 @@ body {
 .buttons {
     height: 250px;
     width: 500px;
-
     display: flex;
     justify-content: space-around;
 }
@@ -28,6 +29,7 @@ body {
     width: 50px;
     border-style:solid;
     text-align: center;
+    border-radius: 6px;
 }
 
 img {
@@ -38,7 +40,7 @@ img {
 .choices {
     height: 150px;
     width: 400px;
-    border-style: solid;
+    
     align-self: center;
     margin: 10px;
     display:flex;
@@ -54,14 +56,14 @@ img {
 .choices .player{
     height: 100px;
     width: 100px;
-    border-style: solid;
+    border-bottom-style: dashed;
     text-align: center;
 }
 
 .choices .computer {
     height: 100px;
     width: 100px;
-    border-style: solid;
+    border-bottom-style:dashed;
     text-align: center;
 }
 
